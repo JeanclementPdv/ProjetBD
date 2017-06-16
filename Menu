@@ -1,0 +1,24 @@
+package Main;
+
+import java.awt.Component;
+
+import javax.swing.*;
+
+public class Menu {
+	
+  public static void main(String[] args) {
+	ImageIcon img= new ImageIcon("C:\\image5.png");
+	ImageIcon img1= new ImageIcon("C:\\image4.png");
+    String[] niveau = {"Niveau 1", "Niveau 2", "Niveau 3", "Niveau 4", "Niveau 5"};
+    JOptionPane jop = new JOptionPane(), jop2 = new JOptionPane();
+    int rang = jop.showOptionDialog(null, 
+      "Choix du niveau",
+      "BoulderDash !",
+      JOptionPane.YES_NO_CANCEL_OPTION,
+      JOptionPane.QUESTION_MESSAGE,
+      img,
+      niveau,
+      niveau[2]);
+    jop2.showMessageDialog(null, "Vous avez choisi le  " + niveau[rang], "BoulderDash", JOptionPane.INFORMATION_MESSAGE,img1);
+  }
+}
