@@ -14,7 +14,9 @@ public class Animate {
 	private int WIDTH = 32;
 
 	private int HEIGHT= 32;
-
+	/**
+	 * Class constructor
+	 */
 	public Animate (){}
 
 	public void xMove(Direction direction) {
