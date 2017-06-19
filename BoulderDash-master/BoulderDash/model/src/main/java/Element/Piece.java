@@ -22,5 +22,19 @@ public class Piece {
 	
 	public void setDirection(Direction direction){}
 	
+	public Direction getDirection(){
+		return null;
+		
+	}
+	
+	public boolean isCollectable(){
+		return false;
+		
+	}
+	
+	public boolean isMovable(){
+		return false;
+		
+	}
 	}
 
