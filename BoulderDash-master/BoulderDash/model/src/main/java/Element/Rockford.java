@@ -2,6 +2,12 @@ package Element;
 
 public class Rockford {
 
+	/**
+	 * the class Rockford.
+	* @author MaximeHollebecq
+	* @version 1.0
+	*/
+	
 	public void BoulderDashModel(){
 		
 	}
