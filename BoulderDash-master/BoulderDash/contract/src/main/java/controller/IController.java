@@ -7,7 +7,6 @@ package controller;
  * @version 1.0
  */
 
- /* je suis une licorne */
 
 public interface IController {
 
