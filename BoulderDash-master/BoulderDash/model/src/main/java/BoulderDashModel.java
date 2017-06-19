@@ -1,17 +1,37 @@
-/**
- * 
- */
+import java.util.ArrayList;
 
-/**
- * @author maxime
- *
- */
-public class BoulderDashModel extends IPiece , IAnimate {
+import Element.Animate;
+import Element.Piece;
+import setting.Setting;
 
-	public String BoulderDashModel = "BoulderDashModel";
-	public Void AddPiece (Piece , piece);
-	public Void DeletePiece (Piece , piece);
-	public Void AddAnimate (Animate , animate);
-	public Void DeleteAnimate ()
+public class BoulderDashModel {
+
+	public BoulderDashModel(){}
+
+	public ArrayList<Piece> getPiece() {
+		return null;
+	}
+
+	public ArrayList<Setting> getSetting() {
+		return null;
+	}
+
+	public void AddPiece ( Piece piece) {
+	}
+
+	public void DeletePiece ( Piece piece) {
+	}
+
+	public void AddAnimate ( Animate animate) {
+	}
 	
+	public void DeleteAnimate ( Animate animate) {
+	}
+	
+	public void AddSetting ( Setting setting) {
+	}
+	
+	public void DeleteSetting ( Setting setting) {
+	}
 }
+
