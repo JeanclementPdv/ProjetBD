@@ -1,7 +1,16 @@
 package Element;
 
 public class Animate {
-
+/**
+ * <h1>The Class Animate.</h1>
+ * 
+ *  @author Podevin Jean clement
+ * @version 1.0
+ */
+	
+	/**
+	 * @param initiate the WIDTH and the HEIGHT 
+	 */
 	private int WIDTH = 32;
 
 	private int HEIGHT= 32;
