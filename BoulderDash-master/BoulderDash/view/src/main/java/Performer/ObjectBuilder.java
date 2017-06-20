@@ -1,5 +1,10 @@
 package Performer;
 
+/**
+ * the class ObjectBuilder.
+* @author MaximeHollebecq
+* @version 1.0
+*/
 public class ObjectBuilder {
 
 	private ObjectBuilder (IShowElementModel ShowElementModel){
