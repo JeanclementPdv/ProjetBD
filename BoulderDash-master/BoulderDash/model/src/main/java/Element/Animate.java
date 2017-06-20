@@ -2,10 +2,10 @@ package Element;
 
 public class Animate {
 /**
- * <h1>The Class Animate.</h1>
+ * The Class Animate.
  * 
  *  @author Podevin Jean clement
- * @version 1.0
+ * @version 1.1
  */
 	
 	/**
@@ -15,32 +15,55 @@ public class Animate {
 
 	private int HEIGHT= 32;
 	
+	/**
+	 * agregate the enumclass
+	 */
 	private Direction direction;
 	/**
-	 * Class constructor
+	 * Class constructor Animate
 	 */
 	public Animate (){}
 
 	/**
-	 * 
+	
 	 * @param direction
+
+	 * @param direction with axis X
+
 	 */
 	public void xMove(Direction direction) {
 	}
 
+	/**
+	 * 
+	 * @param direction with axis Y 
+	 */
+	
 	public void yMove(Direction direction) {
 	}
+
 
 	/**
 	 * 
 	 * @return false by default for boolean 
 	 */
+
+	
+/**
+ * 
+ * @return
+ */
+
 	public boolean CanDie() {
 		return false;
 	}
 	/**
 	 * 
+
 	 * @return null by default for getDirection
+
+	 * @return
+
 	 */
 	public Direction getDirection() {
 		return null;
@@ -52,18 +75,8 @@ public class Animate {
 	public void setDirection(Direction direction) {
 	}
 
-/**
- * 
- * @author Adurtis
- *	Agregate enum class direction 
- */
-	public class Direction {
-		private Animate a;
 
-		public Animate getDirection() {
-			return a;
-		}
-	}
+
 }
 
 

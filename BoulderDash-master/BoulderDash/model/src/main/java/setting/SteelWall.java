@@ -1,6 +1,15 @@
 package setting;
 
-public class SteelWall extends Setting {
-	public final static String STEELWALL = "steelwall" ;
+/**
+ * the class Card.
+* @author MaximeHollebecq
+* @version 1.0
+*/
 
+public class SteelWall extends Setting {
+	
+	/**
+	 * definition of the attribute steelwall with a String type 
+	 */
+    public final static String STEELWALL = "steelwall";
 }
