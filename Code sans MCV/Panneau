@@ -1,0 +1,94 @@
+package Jeu;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Panneau extends JPanel implements ActionListener{
+	private Timer timer;
+	private Map m;
+	private Player p;
+	
+	
+	public Panneau(){
+			
+		m = new Map();
+		p = new Player();
+		addKeyListener(new Al());
+		setFocusable(true);
+			
+			timer = new Timer(25, this);
+			timer.start();
+		}
+	
+
+	
+		
+		public void actionPerformed(ActionEvent e){
+			repaint();
+		}
+		
+		public void paint(Graphics g){
+			super.paint(g);
+			
+			for(int y = 0; y < 26; y++){
+				for(int x = 0; x< 26; x++){
+					if(m.getMap(x, y).equals("r")){
+						g.drawImage(m.getTerre(), x * 32, y * 32, null);
+					}
+					if(m.getMap(x, y).equals("m")){
+						g.drawImage(m.getMur(), x * 32, y * 32, null);
+					}
+					if(m.getMap(x, y).equals("d")){
+						g.drawImage(m.getDiam(), x * 32, y * 32, null);
+					}
+					if(m.getMap(x, y).equals("b")){
+						g.drawImage(m.getBol(), x * 32, y * 32, null);
+					}
+					
+				}
+				
+			}
+			
+			g.drawImage(p.getPlayer(), p.getTileX() * 32, p.getTileY() * 32, null);
+		}
+		
+		public class Al extends KeyAdapter{
+			public void keyPressed(KeyEvent e){
+				int keycode = e.getKeyCode();
+				
+				if(keycode == KeyEvent.VK_Z){
+					if(!m.getMap(p.getTileX(), p.getTileY() - 1).equals("m")){
+					p.move(0, -1);
+					}
+				}
+				if(keycode == KeyEvent.VK_S){
+					if(!m.getMap(p.getTileX(), p.getTileY() + 1).equals("m")){
+					p.move(0, 1);
+					
+					}
+				}
+				if(keycode == KeyEvent.VK_Q){
+					if(!m.getMap(p.getTileX() - 1, p.getTileY()).equals("m")){
+					p.move(-1, 0);
+					}
+				}
+				if(keycode == KeyEvent.VK_D){
+					if(!m.getMap(p.getTileX() + 1, p.getTileY()).equals("m")){
+					p.move(1, 0);
+					}
+				}	
+}
+			
+			public void keyRelased(KeyEvent e){
+				
+			}
+			public void keyTyped(KeyEvent e){
+				
+			}
+		}
+		
+		
+		
+	}
+
