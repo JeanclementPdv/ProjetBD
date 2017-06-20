@@ -45,15 +45,8 @@ public class Animate {
 
 	/**
 	 * 
-	 * @return false by default for boolean 
+	 * @return false by default for CanDie 
 	 */
-
-	
-/**
- * 
- * @return
- */
-
 	public boolean CanDie() {
 		return false;
 	}
@@ -70,7 +63,7 @@ public class Animate {
 	}
 /**
  * 
- * @param direction
+ * @param direction with the method setDirection
  */
 	public void setDirection(Direction direction) {
 	}

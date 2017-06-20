@@ -46,7 +46,7 @@ public class Piece {
 	
 	/**
 	 * 
-	 * @return null bu default for getDirection
+	 * @return null by default for getDirection
 	 */
 	public Direction getDirection(){
 		return null;
