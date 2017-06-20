@@ -22,6 +22,10 @@ public class Animate {
 	public void xMove(Direction direction) {
 	}
 
+	/**
+	 * 
+	 * @param direction
+	 */
 	public void yMove(Direction direction) {
 	}
 
