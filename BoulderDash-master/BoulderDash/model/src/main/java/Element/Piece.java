@@ -1,23 +1,24 @@
 package Element;
 
-public class Piece {
+import model.IAnimate;
+import model.IPiece;
+
+public abstract class Piece implements IPiece,IAnimate{
 /**
  * Initiate WIDTH and HEIGHT at 32
  */
 	private int WIDTH = 32;
 
 	private int HEIGHT = 32;
+	
+	
 /**
  * 
  * @author Adurtis
  *	Agragate the enumClass Direction
  */
-	public class Direction {
-		private Piece d;
 
-		public Piece getDirection() {
-			return d;
-		}
+	private Direction direction;
 		
 		/**
 		 * 
@@ -25,7 +26,7 @@ public class Piece {
 		 */
 		public void kill (Animate animate){}
 
-	}
+	
 	/**
 	 * 
 	 * @param direction

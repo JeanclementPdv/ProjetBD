@@ -2,13 +2,14 @@ import java.util.ArrayList;
 
 import Element.Animate;
 import Element.Piece;
+import model.IBoulderDashModel;
 import setting.Setting;
 /**
  * the class BoulderDashModel.
 * @author MaximeHollebecq
 * @version 1.0
 */
-public class BoulderDashModel {
+public abstract class BoulderDashModel implements IBoulderDashModel {
 
 	/**
 	 * definition of the method BoulderDashModel
