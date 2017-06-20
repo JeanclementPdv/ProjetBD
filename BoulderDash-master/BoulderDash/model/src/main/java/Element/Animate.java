@@ -14,28 +14,49 @@ public class Animate {
 	private int WIDTH = 32;
 
 	private int HEIGHT= 32;
+	
+	private Direction direction;
 	/**
 	 * Class constructor
 	 */
 	public Animate (){}
 
+	/**
+	 * 
+	 * @param direction
+	 */
 	public void xMove(Direction direction) {
 	}
 
 	public void yMove(Direction direction) {
 	}
 
+	/**
+	 * 
+	 * @return false by default for boolean 
+	 */
 	public boolean CanDie() {
 		return false;
 	}
+	/**
+	 * 
+	 * @return null by default for getDirection
+	 */
 	public Direction getDirection() {
 		return null;
 	}
-
+/**
+ * 
+ * @param direction
+ */
 	public void setDirection(Direction direction) {
 	}
 
-
+/**
+ * 
+ * @author Adurtis
+ *	Agregate enum class direction 
+ */
 	public class Direction {
 		private Animate a;
 
