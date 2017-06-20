@@ -19,7 +19,7 @@ public class Card {
 			
 		}
 		
-		/** definiton of the method GetHeight
+		/** definition of the method GetHeight
 		 * 
 		 */
 		public void getHeight() {
