@@ -1,0 +1,50 @@
+package Main;
+
+import java.sql.*;
+
+import com.mysql.jdbc.*;
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.ResultSet;
+import com.mysql.jdbc.Statement;
+
+public class demojdbc {
+	public static void main(String[] args) {
+		readinbase();
+	}
+		
+		
+
+		public static void readinbase (){
+			String url = "jdbc:mysql://localhost:3306/boulderdash";
+			String login = "root";
+			String passwd = "maxime";
+			java.sql.Connection cn = null;
+			java.sql.Statement st = null;
+			java.sql.ResultSet rs = null;
+	
+			try {
+				Class.forName ("com.mysql.jdbc.Driver");
+				cn = DriverManager.getConnection(url, login, passwd);
+				st = cn.createStatement ();
+				String sql = "{call boulderdash.getmap()}";
+				rs = st.executeQuery(sql);
+				
+				while (rs.next()) {
+					System.out.println(rs.getString("mapPattern"));
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			} catch (ClassNotFoundException e){
+				e.printStackTrace();
+			} finally {
+				try {
+					cn.close();
+					st.close();
+				} catch (SQLException e){
+					e.printStackTrace();
+				}
+			}
+		}
+	
+
+	}
