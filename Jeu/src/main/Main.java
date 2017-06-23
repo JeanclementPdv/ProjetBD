@@ -11,8 +11,19 @@ public class Main {
 		new Main();
 		
 	}
+	
+	/**
+	 * 
+	 * @author Jean-Clement Podevin
+	 * 
+	 * version 1.0
+	 * 
+	 * 
+	 * Initialization method of The Game
+	 
+	 **/
 		public Main(){
-		JFrame fenetre = new  JFrame("Jeu");
+		JFrame fenetre = new  JFrame("Game");
 		fenetre.add(new Board());
 		fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		fenetre.setSize(1088, 864);

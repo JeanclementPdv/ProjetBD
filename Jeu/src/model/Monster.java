@@ -16,13 +16,13 @@ public class Monster {
 	public Monster(){
 		
 		
-		ImageIcon img = new ImageIcon("C://persod.png");
+		ImageIcon img = new ImageIcon("C://monstre.png");
 		monster = img.getImage();
 		
 		
 	
-		tileMX = 9;
-		tileMY = 9;
+		tileMX = 19;
+		tileMY = 18;
 		
 		
 	}
